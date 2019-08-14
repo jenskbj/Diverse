@@ -23,8 +23,8 @@ square = driver.find_element_by_class_name("target-label-white")
 while True:
     file = square.text[0]
     rank = square.text[1]
-    xCoord = (ord(file)-97)*interval+initX
-    yCoord = (ord(rank)-49)*(-interval)+initY
+    xCoord = (ord(file)-ord('a'))*interval+initX
+    yCoord = (ord(rank)-ord('1'))*(-interval)+initY
     click(xCoord, yCoord)
 
 # first (a1):   220:885
